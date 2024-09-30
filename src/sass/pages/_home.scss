@@ -1,16 +1,64 @@
 /* home */
 @use "../abstracts/variables" as var;
 @use "../base/typography" as type;
+@import "../abstracts/mixins";
 
 body {
   font-family: type.$font;
   background-color: var.$bg-very-light;
-  width: min(100% - 2rem, 60ch);
-  margin-inline: auto;
-  margin-block: 4rem;
+}
+
+header, footer {
+    @include flex-center-column;
+    background-color: var.$primary-color;
+    padding: 2rem;
+    border-radius: 0px 0px 20px 20px;
+    p{
+      color:white;
+    }
 }
 
 h1 {
-  color: var.$primary-color;
+  color: white;
   text-align: center;
+}
+
+h2 {
+  color: var.$primary-very-light;
+  text-align: center;
+}
+
+p{
+  color: var.$primary-very-dark;
+  font-size: 1.25em;
+}
+
+.poem{
+  @include flex-center-horiz;
+  background-color: var.$bg-light;
+  margin: 2rem;
+  border-radius: 20px;
+  &__content, &__img{
+    padding: 2.3rem;
+  }
+  &__img{
+    max-width: 25vw;
+  }
+}
+
+footer{
+  border-radius: 20px 20px 0px 0px;
+}
+
+@media screen and (max-width: 60em){
+  p{
+    font-size: 1em;
+  }
+  .poem{
+    @include flex-center-column;
+    flex-direction: column-reverse;
+    &__img{
+      min-width: 65vw;
+    }
+  }
 }
