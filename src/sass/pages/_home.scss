@@ -24,13 +24,15 @@ h1 {
 }
 
 h2 {
+  font-family: type.$subtitle-font;
   color: var.$primary-very-light;
   text-align: center;
 }
 
 p{
+  font-family: type.$content-font;
   color: var.$primary-very-dark;
-  font-size: 1.25em;
+  font-size: 1.5em;
 }
 
 .poem{
@@ -48,11 +50,14 @@ p{
 
 footer{
   border-radius: 20px 20px 0px 0px;
+  p{
+    font-family: type.$font;
+  }
 }
 
 @media screen and (max-width: 60em){
   p{
-    font-size: 1em;
+    font-size: 1.25em;
   }
   .poem{
     @include flex-center-column;

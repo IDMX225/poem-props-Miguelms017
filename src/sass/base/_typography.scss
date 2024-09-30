@@ -1,8 +1,12 @@
 /* typography */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Kalam:wght@300;400;700&display=swap');
 
 $font: "Poppins", serif;
+$subtitle-font: "Kalam", sans-serif;
+$content-font: "Crimson Text", serif;
 
 // body font styling vars
 $body-font-size: 120%;
