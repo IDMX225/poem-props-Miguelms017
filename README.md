@@ -1,6 +1,8 @@
-# IDMX 11ty Sass Starter
+# Assignmevt: Poem Props
 
-The set of development scripts in this starter is configured to watch and compile a simple Sass structure using 11ty.
+This is an assignment for web development II class (IDMX-268-99v) which shows a public domain poem by using props (@imports, @include, etc.)
+
+The set of development scripts here is configured to watch and compile a simple Sass structure using 11ty.
 
 The code is located in the `src` folder and the page is created in the `public` folder.
 
@@ -29,3 +31,7 @@ Use this as the "Publish command" if needed by hosting services such as Netlify.
 ## Resources
 
 <small>The starter was inspired by [11ty Sass Skeleton](https://github.com/5t3ph/11ty-sass-skeleton) by [@5t3ph](https://twitter.com/5t3ph)</small>
+
+<small>Poem site: [September by Madison Julius Cawein](https://www.public-domain-poetry.com/madison-julius-cawein/september-11229)</small>
+
+<small>Image: Photo by [Manasvita S](https://unsplash.com/@manasvita) on [Unsplash](https://unsplash.com/)</small>
