@@ -16,3 +16,20 @@ $primary-light: func.tint($primary-color, 25%);
 $primary-medium: $primary-color;
 $primary-dark: func.shade($primary-color, 25%);
 $primary-very-dark: func.shade($primary-color, 50%);
+
+:root{
+    --bg-very-light: #{$bg-very-light};
+    --bg-light: #{$bg-light};
+    --bg-medium: #{$bg-color};
+    --bg-dark: #{$bg-dark};
+    --bg-very-dark: #{$bg-very-dark};
+
+    --primary-very-light: #{$primary-very-light};
+    --primary-light: #{$primary-light};
+    --primary-medium: #{$primary-color};
+    --primary-dark: #{$primary-dark};
+    --primary-very-dark: #{$primary-very-dark};
+
+    --black: black;
+    --white: white;
+}
