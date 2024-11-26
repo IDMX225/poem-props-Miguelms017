@@ -5,39 +5,35 @@
 
 body {
   font-family: type.$font;
-  background-color: var.$bg-very-light;
+  background-color: var(bg-very-light);
 }
 
 header, footer {
     @include flex-center-column;
-    background-color: var.$primary-color;
+    background-color: var(primary-color);
     padding: 2rem;
     border-radius: 0px 0px 20px 20px;
-    p{
-      color:white;
-    }
 }
 
 h1 {
-  color: white;
   text-align: center;
 }
 
 h2 {
   font-family: type.$subtitle-font;
-  color: var.$primary-very-light;
+  color: var(primary-very-light);
   text-align: center;
 }
 
 p{
   font-family: type.$content-font;
-  color: var.$primary-very-dark;
+  color: var(primary-very-dark);
   font-size: 1.5em;
 }
 
 .poem{
   @include flex-center-horiz;
-  background-color: var.$bg-light;
+  background-color: var(bg-light);
   margin: 2rem;
   border-radius: 20px;
   &__content, &__img{
